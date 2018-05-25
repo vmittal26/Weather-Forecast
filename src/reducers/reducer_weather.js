@@ -1,4 +1,10 @@
-export default function(state = null ,action){
-    console.log('Action Received Via Searchbar',action);
-    return action;
+import { FETCH_WEATHER } from '../actions/action_weather';
+
+export default function(state = [] , action){
+   switch(action.type) {
+   case FETCH_WEATHER:
+       console.log(action);
+       return [action.payload.data,...state];
+   }
+   return state;
 }

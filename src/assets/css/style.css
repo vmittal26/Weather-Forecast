@@ -1,0 +1,10 @@
+svg{
+    height: 150px;
+}
+.weather-list{
+    text-align: center;
+}
+
+.weather-list td:first-child{
+    vertical-align: middle;
+}
